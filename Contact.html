@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Contact.css">
+
+    <style>
+      .banner-image {
+        background-image: url('img/contact-2.jpg');
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Shan's Coffee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="login.html">Login</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner image -->
+    <div
+    class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+  > 
+  </div>
+
+      </style>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+              <h4>Get in touch</h4>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your number">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-md-5 ">
+              <h4>Contact us</h4><hr>
+              <div class="mt-4">
+                  <div class="d-flex">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p >Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
+                  </div><hr>
+                  <div class="d-flex">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>Contact :- 8888888888</p>
+                  </div><hr>
+                  <div class="d-flex">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p>Email:- Contact@gmail.com</p>
+                  </div><hr>
+                  <div class="d-flex">
+                    <i class="bi bi-browser-chrome"></i>
+                    <p>Website: www.contact.com</p>
+                  </div><hr>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
+
+  </body>
+</html>
